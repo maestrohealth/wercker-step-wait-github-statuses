@@ -1,0 +1,28 @@
+box: wercker/golang
+build:
+    steps:
+      - shellcheck:
+          files: run.sh
+      - script:
+          name: enable go vendor experiment
+          code: export GO15VENDOREXPERIMENT=1
+      - setup-go-workspace
+      - script:
+          name: go get dependencies
+          code: |-
+            govendor sync
+      - golint
+      - script:
+          name: go build
+          code: |
+            go build 
+      - script:
+          name: copy artifacts
+          code: |
+              cp wercker-step-wait-github-statuses \
+                 wercker-step.yml \
+                 README.md \
+                 run.sh \
+                 $WERCKER_OUTPUT_DIR
+      - validate-wercker-step
+

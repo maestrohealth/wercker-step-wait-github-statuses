@@ -1,0 +1,27 @@
+name: wait-github-statuses
+version: 0.1.0
+description: |
+    Waits for one or more status reports against this commit in GitHub to return
+    a success status. The step will succeed when all of the named statuses 
+    return success and will fail if one or more of them return failure. It will 
+    wait for the configured timeout for status results. 
+  
+    Note that the step is still subject to Wercker's standard step timeout, so 
+    if you wish to configure a timeout longer than Wercker's default 25 minutes,
+    you also need to increase Wercker's step timeout accordingly.
+keywords:
+  - github
+  - status
+properties:
+    status_contexts:
+        type: string
+        required: true
+        description: |
+            Comma-separated list of statuses to wait for, e.g. 
+            "wercker/build,wercker/pipeline-2"
+    timeout:
+        type: integer
+        required: false
+        default: 25
+        description: Timeout in minutes
+

@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "D0XN/mcGIua2WyaEXA1I54jRfgY=",
+			"path": "github.com/google/go-github/github",
+			"revision": "7ec4e45f77474b3a7b7d9b7ef233a0cc8339ddf3",
+			"revisionTime": "2016-05-18T00:00:10Z"
+		},
+		{
+			"checksumSHA1": "mktBVED98G2vv+OKcSgtnFVZC1Y=",
+			"path": "golang.org/x/oauth2",
+			"revision": "71d9edd725fe4ce4c692fcb20765be558df45ad3",
+			"revisionTime": "2016-06-01T00:25:10Z"
+		}
+	],
+	"rootPath": "github.com/maestrohealth/wercker-step-wait-pipelines"
+}
