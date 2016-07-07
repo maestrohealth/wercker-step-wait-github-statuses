@@ -13,7 +13,13 @@
 			"path": "golang.org/x/oauth2",
 			"revision": "71d9edd725fe4ce4c692fcb20765be558df45ad3",
 			"revisionTime": "2016-06-01T00:25:10Z"
+		},
+		{
+			"checksumSHA1": "W/GiDqzsagBnR7/yEvxatMhUDBs=",
+			"path": "golang.org/x/oauth2/internal",
+			"revision": "71d9edd725fe4ce4c692fcb20765be558df45ad3",
+			"revisionTime": "2016-06-01T00:25:10Z"
 		}
 	],
-	"rootPath": "github.com/maestrohealth/wercker-step-wait-pipelines"
+	"rootPath": "github.com/maestrohealth/wercker-step-wait-github-statuses"
 }

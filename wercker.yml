@@ -12,7 +12,8 @@ build:
           code: |-
               go get github.com/kardianos/govendor
               govendor sync
-      - golint
+      - golint:
+          exclude: "vendor/"
       - script:
           name: go build
           code: |
