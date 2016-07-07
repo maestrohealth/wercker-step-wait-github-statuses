@@ -10,12 +10,13 @@ build:
       - script:
           name: go get dependencies
           code: |-
-            govendor sync
+              go get github.com/kardianos/govendor
+              govendor sync
       - golint
       - script:
           name: go build
           code: |
-            go build 
+              go build 
       - script:
           name: copy artifacts
           code: |
