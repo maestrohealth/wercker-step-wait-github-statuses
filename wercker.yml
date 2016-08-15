@@ -21,10 +21,6 @@ build:
       - script:
           name: copy artifacts
           code: |
-              cp wercker-step-wait-github-statuses \
-                 wercker-step.yml \
-                 README.md \
-                 run.sh \
-                 $WERCKER_OUTPUT_DIR
+              cp wercker-step-wait-github-statuses wercker-step.yml README.md run.sh $WERCKER_OUTPUT_DIR
       - validate-wercker-step
 
