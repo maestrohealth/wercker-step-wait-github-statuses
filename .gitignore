@@ -3,3 +3,5 @@
 /vendor/*/*
 /Godeps
 /.wercker
+*.orig
+*.rej
