@@ -1,3 +1,5 @@
 /wercker-step-wait-github-statuses
 /test.sh
 /vendor/*/*
+/Godeps
+/.wercker
