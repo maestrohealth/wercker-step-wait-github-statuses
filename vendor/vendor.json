@@ -9,6 +9,18 @@
 			"revisionTime": "2016-05-18T00:00:10Z"
 		},
 		{
+			"checksumSHA1": "yyAzHoiVLu+xywYI2BDyRq6sOqE=",
+			"path": "github.com/google/go-querystring/query",
+			"revision": "9235644dd9e52eeae6fa48efd539fdc351a0af53",
+			"revisionTime": "2016-03-11T01:20:12Z"
+		},
+		{
+			"checksumSHA1": "hKZGpbFuCrkE4s1vxubKK1aFlfI=",
+			"path": "golang.org/x/net/context",
+			"revision": "b846920a172af75fe52c1400ae6094307be83b8a",
+			"revisionTime": "2015-10-08T05:10:10Z"
+		},
+		{
 			"checksumSHA1": "mktBVED98G2vv+OKcSgtnFVZC1Y=",
 			"path": "golang.org/x/oauth2",
 			"revision": "71d9edd725fe4ce4c692fcb20765be558df45ad3",
