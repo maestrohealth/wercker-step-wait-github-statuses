@@ -24,4 +24,7 @@ properties:
         required: false
         default: 25
         description: Timeout in minutes
-
+    github_token:
+        type: string
+        required: true
+        description: GitHub personal access token with rights to the status API
