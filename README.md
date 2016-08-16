@@ -36,6 +36,10 @@ TBD
 
 # Changelog
 
+## 0.1.1
+
+- Fixed path error in run.sh
+
 ## 0.1.0
 
 - Initial release

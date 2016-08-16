@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./wercker-step-wait-pipelines || exit $?
+$WERCKER_STEP_ROOT/wercker-step-wait-pipelines || exit $?
 
