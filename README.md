@@ -36,6 +36,10 @@ TBD
 
 # Changelog
 
+## 0.1.2
+
+- Fixed bad executable name in run.sh
+
 ## 0.1.1
 
 - Fixed path error in run.sh

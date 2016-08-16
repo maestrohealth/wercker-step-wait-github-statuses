@@ -1,5 +1,5 @@
 name: wait-github-statuses
-version: 0.1.1
+version: 0.1.2
 description: |
     Waits for one or more status reports against this commit in GitHub to return
     a success status. The step will succeed when all of the named statuses 
