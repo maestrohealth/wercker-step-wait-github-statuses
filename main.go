@@ -10,9 +10,9 @@ import (
 )
 
 func main() {
-	timeout := os.Getenv("WERCKER_WAIT_FOR_GITHUB_STATUSES_TIMEOUT")
-	githubToken := os.Getenv("WERCKER_WAIT_FOR_GITHUB_STATUSES_GITHUB_TOKEN")
-	statusContextsList := os.Getenv("WERCKER_WAIT_FOR_GITHUB_STATUSES_STATUS_CONTEXTS")
+	timeout := os.Getenv("WERCKER_WAIT_GITHUB_STATUSES_TIMEOUT")
+	githubToken := os.Getenv("WERCKER_WAIT_GITHUB_STATUSES_GITHUB_TOKEN")
+	statusContextsList := os.Getenv("WERCKER_WAIT_GITHUB_STATUSES_STATUS_CONTEXTS")
 	gitOwner := os.Getenv("WERCKER_GIT_OWNER")
 	gitRepository := os.Getenv("WERCKER_GIT_REPOSITORY")
 	gitCommit := os.Getenv("WERCKER_GIT_COMMIT")

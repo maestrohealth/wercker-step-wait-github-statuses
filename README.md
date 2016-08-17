@@ -36,6 +36,11 @@ TBD
 
 # Changelog
 
+## 0.1.3
+
+- run.sh should call fail instead of exit
+- main.go was looking for the wrong environment variables
+
 ## 0.1.2
 
 - Fixed bad executable name in run.sh
