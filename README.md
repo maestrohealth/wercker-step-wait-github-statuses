@@ -36,6 +36,10 @@ TBD
 
 # Changelog
 
+## 0.1.4
+
+- exit with an error code when no token is provided
+
 ## 0.1.3
 
 - run.sh should call fail instead of exit

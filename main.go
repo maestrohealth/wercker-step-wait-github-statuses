@@ -17,6 +17,11 @@ func main() {
 	gitRepository := os.Getenv("WERCKER_GIT_REPOSITORY")
 	gitCommit := os.Getenv("WERCKER_GIT_COMMIT")
 
+	if githubToken == "" {
+		fmt.Fprintf(os.Stderr, "No GitHub personal authentication token is configured, please set github_token in wercker.yml\n")
+		os.Exit(1)
+	}
+
 	if statusContextsList == "" {
 		fmt.Fprintf(os.Stderr, "No statuses are configured, please set status_contexts in wercker.yml\n")
 		os.Exit(1)
@@ -58,7 +63,8 @@ func main() {
 		opt := &github.ListOptions{}
 		statuses, _, err := client.Repositories.GetCombinedStatus(gitOwner, gitRepository, gitCommit, opt)
 		if err != nil {
-			return
+			fmt.Fprintf(os.Stderr, "\n%s\n", err)
+			os.Exit(1)
 		}
 
 		statusMap := make(map[string]string)
